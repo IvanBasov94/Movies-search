@@ -1,0 +1,16 @@
+@import '../../scss//color';
+
+.movie__list, .show__list {
+   margin: 20px 0px;
+
+   h2 {
+      color: $colorFontSecondary;
+      margin-bottom: 10px;
+      font-weight: 400;
+   }
+}
+
+.movies__error, .shows__error {
+   color: $colorFontPrimary;
+}
+
