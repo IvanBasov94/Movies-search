@@ -1,12 +1,8 @@
-# Movies search
-A small application for finding movies and shows.
-
 # Movies search 🎞
 A small application for finding movies and shows.
 
 ### Main objectives of the project 
-* Project contains basic React hooks.
-* The project can be used as a test task on various topics (for example, geography).
+* The application is used to search for information on movies and shows.
 * This project can be used as an element in more complex projects.
 
 ### Languages and Tools
@@ -17,7 +13,7 @@ A small application for finding movies and shows.
 ![SCSS](https://img.shields.io/badge/-SCSS-4d4d4d?style=for-the-badge&logo=Sass&logoColor=be608b)
 
 ### Demo
-![DEMO of application](./search-movies.gif "DEMO of application")
+<img src="./search-movies.gif" alt="drawing" width="600"/>
 
 ### Running the finished code
 The project is made in version React 18.2.0.
