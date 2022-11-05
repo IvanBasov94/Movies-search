@@ -24,28 +24,28 @@ const MovieDetail = () => {
    }, [dispatch, imdbID]);
 
    return (
-      <div className={styles.movie__section}>
+      <div className={styles.section}>
          {Object.keys(data).length === 0 ?
-            (<div className={styles.movie__loading}>...Загрузка</div>) :
+            (<div className={styles.loading}>...Загрузка</div>) :
             (<>
-               <div className={styles.section__left}>
-                  <div className={styles.movie__title}>{data.Title}</div>
-                  <div className={styles.movie__rating}>
+               <div className={styles.left}>
+                  <div className={styles.title}>{data.Title}</div>
+                  <div className={styles.rating}>
                      <span>
-                        Рейтинг <FaStar className={styles.fa__star} /> : {data.imdbRating}
+                        Рейтинг <FaStar className={styles.faStar} /> : {data.imdbRating}
                      </span>
                      <span>
-                        Голосов <FaThumbsUp className={styles.fa__thumbs__up} /> : {data.imdbVotes}
+                        Голосов <FaThumbsUp className={styles.faThumbsUp} /> : {data.imdbVotes}
                      </span>
                      <span>
-                        Продолжительность <FaFilm className={styles.fa__film} /> : {data.Runtime}
+                        Продолжительность <FaFilm className={styles.faFilm} /> : {data.Runtime}
                      </span>
                      <span>
-                        Год <FaCalendar className={styles.fa__calendar} /> : {data.Year}
+                        Год <FaCalendar className={styles.faCalendar} /> : {data.Year}
                      </span>
                   </div>
-                  <div className={styles.movie__plot}>{data.Plot}</div>
-                  <div className={styles.movie__info}>
+                  <div className={styles.plot}>{data.Plot}</div>
+                  <div className={styles.info}>
                      <div>
                         <span>Режиссер</span>
                         <span>{data.Director}</span>
@@ -68,7 +68,7 @@ const MovieDetail = () => {
                      </div>
                   </div>
                </div>
-               <div className={styles.section__right}>
+               <div className={styles.sectionRight}>
                   <img src={data.Poster} alt={data.Title} />
                </div>
             </>

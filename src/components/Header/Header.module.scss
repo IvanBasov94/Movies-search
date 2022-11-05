@@ -15,13 +15,13 @@
    font-weight: 600;
 }
 
-.user__image, 
-.user__image img {
+.userImage, 
+.userImage img {
    width: 38px;
    height: 38px;
 }
 
-.search__bar {
+.searchBar {
    width: 60%;
    display: flex;
    justify-content: center;
@@ -48,6 +48,6 @@
    }
 }
 
-.fa__search {
+.faSearch {
    color: $colorSecondary;
 }

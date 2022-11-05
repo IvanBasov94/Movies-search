@@ -22,7 +22,7 @@ const MovieListing = () => {
          />
       ))
    ) : (
-      <div className={styles.movies__error}>
+      <div className={styles.moviesError}>
          <h3>{movies.Error}</h3>
          <span>😕</span>
       </div>
@@ -36,7 +36,7 @@ const MovieListing = () => {
          />
       ))
    ) : (
-      <div className={styles.shows__error}>
+      <div className={styles.showsError}>
          <h3>{shows.Error}</h3>
          <span>😕</span>
       </div>
@@ -45,11 +45,11 @@ const MovieListing = () => {
 
    return (
       <>
-         <div className={styles.movie__list}>
+         <div className={styles.movieList}>
             <h2>Фильмы</h2>
             <Slider {...Settings}>{renderMovies}</Slider>
          </div>
-         <div className={styles.show__list}>
+         <div className={styles.showList}>
             <h2>Сериалы</h2>
             <Slider {...Settings}>{renderShows}</Slider>
          </div>

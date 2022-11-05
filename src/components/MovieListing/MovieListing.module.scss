@@ -1,6 +1,6 @@
 @import '../../scss//color';
 
-.movie__list, .show__list {
+.movieList, .showList {
    margin: 20px 0px;
 
    h2 {
@@ -10,7 +10,7 @@
    }
 }
 
-.movies__error, .shows__error {
+.moviesError, .showsError {
    color: $colorFontPrimary;
 }
 

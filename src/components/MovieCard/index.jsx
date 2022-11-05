@@ -6,14 +6,14 @@ import styles from './MovieCard.module.scss';
 const MovieCard = ({ data }) => {
 
    return (
-      <div className={styles.card__item}>
+      <div className={styles.item}>
          <Link to={`/movie/${data.imdbID}`}>
             <div>
-               <div className={styles.card__top}>
+               <div className={styles.top}>
                   <img src={data.Poster} alt={data.Title} />
                </div>
-               <div className={styles.card__bottom}>
-                  <div className={styles.card__info}>
+               <div className={styles.bottom}>
+                  <div className={styles.info}>
                      <h4>{data.Title}</h4>
                      <p>{data.Year}</p>
                   </div>

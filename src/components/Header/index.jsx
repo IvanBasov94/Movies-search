@@ -29,7 +29,7 @@ const Header = () => {
          <div className={styles.logo}>
             <Link to='/'>Поиск фильмов</Link>
          </div>
-         <div className={styles.search__bar}>
+         <div className={styles.searchBar}>
             <form onSubmit={submitHandler}>
                <input
                   type="text"
@@ -39,10 +39,10 @@ const Header = () => {
                      setTerm(event.target.value);
                   }}
                />
-               <button type='submit'><FaSearch className={styles.fa__search}/></button>
+               <button type='submit'><FaSearch className={styles.faSearch}/></button>
             </form>
          </div>
-         <div className={styles.user__image}>
+         <div className={styles.userImage}>
             <img src={userPng} alt={styles.user} />
          </div>
       </div>
